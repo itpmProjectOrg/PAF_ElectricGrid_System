@@ -54,7 +54,7 @@ public class Payment {
 		      //execute the statement
 		      preparedStmt.execute();
 		      con.close();
-		      output = "Payment is successfull";
+		      output = "Payment Details Added Successfully ";
 		      
 		      }
 		      catch (Exception e){
@@ -109,14 +109,7 @@ public class Payment {
 		      output += "<td>" + expirationalYear + "</td>";
 		      output += "<td>" + cvn + "</td>";
 						
-		      // buttons
-		      output += "<td><input name='btnUpdate' "
-		             + " type='button' value='Update' ></td>"
-		             + "<td><form method='post' action='Payment.jsp'>"
-		             + "<input name='btnRemove' "
-		             + " type='submit' value='Remove' class='btn btn-danger'>"
-		             + "<input name='paymentID' type='hidden' "
-		             + " value='" + paymentID + "'>" + "</form></td></tr>";
+		     
 		 }
 		 con.close();
 		
